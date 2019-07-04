@@ -1,9 +1,0 @@
-
-
-
-
-<form [formGroup]="form">
-    <mdl-select formControlName="personId">
-      <mdl-option *ngFor="let p of people" [disabled]="p.disabled" [value]="p.id">{{p.name}}</mdl-option>
-    </mdl-select>
-  </form>

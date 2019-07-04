@@ -1,23 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { DashBoardModule } from './dashboard/dashboard.module';
-import { TopfieldsModule } from './topfields/topfields.module';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HeaderModule,
+    NoopAnimationsModule,
     DashBoardModule,
-    TopfieldsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

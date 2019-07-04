@@ -4,8 +4,10 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header.component';
 import { MdlTextFieldModule } from '@angular-mdl/core';
 import { MdlLayoutModule, MdlScreenSizeService } from '@angular-mdl/core';
-import { TopfieldsModule } from '../topfields/topfields.module';
+import { MainFrameModule } from '../mainframe/mainframe.module';
+
 // import { DashBoardModule } from '../dashboard/dashboard.module';
+
 
 @NgModule({
     imports: [
@@ -13,7 +15,7 @@ import { TopfieldsModule } from '../topfields/topfields.module';
         MdlLayoutModule,
         RouterModule,
         MdlTextFieldModule,
-        TopfieldsModule
+        MainFrameModule
     ],
     declarations: [HeaderComponent],
     providers: [
