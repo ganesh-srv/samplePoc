@@ -1,6 +1,7 @@
 # Sample Poc 
      
      This is a sample dashboard which consists of records and its analytics.
+     This repo only consists of scaffolding and few changes
 
 # Scaffolding
      
