@@ -21,6 +21,12 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules",
+                "node_modules/@angular-mdl/core"
+              ]
+            },
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
