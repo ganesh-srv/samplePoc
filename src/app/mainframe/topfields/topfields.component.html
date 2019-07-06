@@ -1,17 +1,24 @@
-
-
-
-
-    <mdl-select >
-      <mdl-option *ngFor="let p of people" [value]="p.id">{{p.name}}</mdl-option>
-    </mdl-select>
-    <mdl-select >
-      <mdl-option *ngFor="let p of people" [value]="p.id">{{p.name}}</mdl-option>
-    </mdl-select>
-    <mdl-select >
-      <mdl-option *ngFor="let p of people" [value]="p.id">{{p.name}}</mdl-option>
-    </mdl-select>
-    <mdl-select >
-      <mdl-option *ngFor="let p of people" [value]="p.id">{{p.name}}</mdl-option>
-    </mdl-select>
-  
+<mat-form-field>
+    
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+      
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>

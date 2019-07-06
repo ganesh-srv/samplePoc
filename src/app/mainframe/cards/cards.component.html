@@ -1,15 +1,39 @@
-<mdl-expansion-panel-group #panelGroup>
-  <mdl-expansion-panel>
-    <mdl-expansion-panel-header>
-      <mdl-expansion-panel-header-list-content>Primary Title </mdl-expansion-panel-header-list-content>
-    </mdl-expansion-panel-header>
-    <mdl-expansion-panel-content>
-      <mdl-expansion-panel-body>
-        <p>This is expansion panel </p>
-      </mdl-expansion-panel-body>
-      <mdl-expansion-panel-footer>
-      </mdl-expansion-panel-footer>
-    </mdl-expansion-panel-content>
-  </mdl-expansion-panel>
-</mdl-expansion-panel-group>
+<mat-accordion *ngFor="let no of number">
+  <mat-expansion-panel  (opened)="toggle('opened')"  (closed)="toggle('closed')">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <ul style="width:40%; float:left; font-size: 40px; list-style: none;">
+          <li>{{no.n1}}</li>
+       </ul>
+       <ul style="width:40%; float:left; font-size: 40px; list-style: none;">
+          <li>{{no.n2}}</li>
+       </ul>
+       <ul style="width:40%; float:left; font-size: 40px; list-style: none;">
+        <li>{{no.n3}}</li>
+     </ul>
+     <ul style="width:40%; float:left; font-size: 40px; list-style: none;">
+      <li>{{no.n4}}</li>
 
+   </ul>
+      </mat-panel-title>
+      <mat-panel-description>
+        
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!-- <app-analytics *ngIf="flag"></app-analytics> -->
+    <app-smp></app-smp>
+  </mat-expansion-panel>
+
+  <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel> -->
+</mat-accordion>
